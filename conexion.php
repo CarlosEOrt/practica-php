@@ -1,7 +1,7 @@
 	
 <?php
   // Credenciales
-  $servername = "localhost:33061";
+  $servername = "localhost:3306";
   $username = "root";
   $password = "";
   $database = "primer_pagina";

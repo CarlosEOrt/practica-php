@@ -1,5 +1,4 @@
 <?php
-        echo "<h2>Funciona con PHP</h2>";
         if(!empty($_POST['nombreIng']) && !empty($_POST['passwordIng'])){
 
           require ('conexion.php');

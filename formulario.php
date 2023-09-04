@@ -16,7 +16,7 @@
     <main>
       <h1>Formulario:</h1>
       <h2>Proporcione sus datos a continuacion:</h2>
-      <form action="store.php" method="post">
+      <form action="store.php" method="post" form="formularioIndex">
         <fieldset>
           <legend>Nombre:</legend>
           <label for="nombreForm">Proporcione su nombre:</label>
