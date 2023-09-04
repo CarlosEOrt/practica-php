@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+.nav{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-top: -60px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.navAnchor{
+    margin-right: 100px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    margin-left: -50px;
+    margin-right: -50px;
+    margin-bottom: -30px;
+}
+
+
+.footer p, .footer a{
+    padding-bottom: 30px;
+    color: white;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    position: relative;
+    background-color:powderblue;
+}
+
+.divisonSeccion{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+ul{
+    text-align: left;
+    margin-left: 39%;
+}
+
+ol{
+    text-align: left;
+    margin-left: 42%;
+}
+
+h1{
+    color:black;
+    font-style: italic;
+    text-decoration: underline;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+}
+
+h2{
+    text-decoration: underline;
+}
+
+figure{
+    border: 1px solid;
+    margin: 10px 370px 10px 370px;
+    border-color: black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+figcaption{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pIntroduccion{
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100px;
+}
+
+input, textarea{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+select{
+    border-radius: 6px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    margin-left: 5px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+fieldset{
+    margin: 0% 40% 2% 40%;
+    border-radius: 10px;
+    border-color: black;
+}
+
+legend{
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+th, td{
+    border: 1px solid;
+
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section>h3{
+    margin-top: 15px;
+    padding-top: 20px;
+}

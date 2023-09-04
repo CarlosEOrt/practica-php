@@ -7,14 +7,14 @@ final class PracticaTest extends TestCase
 {
     public function testFilesExistence(): void
     {
-        $this->assertFileExists('index.php');
+        $this->assertFileExists('formulario.php');
         $this->assertFileExists('store.php');
         $this->assertFileExists('conexion.php');
     }
 
     public function testForm(): void
     {
-        $form = file_get_contents('index.php');
+        $form = file_get_contents('formulario.php');
         $this->assertStringContainsStringIgnoringCase('action="store.php"', $form, $message = 'No se ha definido action');
         $this->assertStringContainsStringIgnoringCase('method="post"', $form, $message = 'No está asignado el método post');
     }
@@ -24,7 +24,7 @@ final class PracticaTest extends TestCase
         $form = file_get_contents('store.php');
         $this->assertStringContainsStringIgnoringCase('$_POST', $form, $message = 'No se utiliza $_POST');
         $this->assertStringContainsStringIgnoringCase('header(', $form, $message = 'No se encuenra método header()');
-        $this->assertStringContainsStringIgnoringCase('Location: index.php', $form, $message = 'No se redirecciona hacia index.php');
+        $this->assertStringContainsStringIgnoringCase('Location: formulario.php', $form, $message = 'No se redirecciona hacia formulario.php');
         $this->assertStringContainsStringIgnoringCase('INSERT INTO', $form, $message = 'No se llama a INSERT INTO');
     }
 
@@ -33,8 +33,13 @@ final class PracticaTest extends TestCase
         $client = new Client();
         $response = $client->post('http://localhost/practica-php/store.php', [
                 'form_params' => [
-                    'nombre' => 'Prueba Nombre',
+                    'nombre' => 'Sebastian',
                     'correo' => 'prueba@test.com',
+                    'genero' => 'hombre',
+                    'password' => '123456789',
+                    'comentarios' => 'prueba@test.com',
+                    'ciudad' => 'zapopan',
+                    'respuesta' => 'on',
                 ]
             ]);
 
