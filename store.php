@@ -24,6 +24,7 @@
           
             $conn->exec($sql);
             header("Location: formulario.php");
+            echo "<h2>Gracias por sus respuestas :D</h2>";
         }
         else{
             echo "<h2>No funciona el INSERT...</h2>";

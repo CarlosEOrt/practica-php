@@ -33,7 +33,7 @@ final class PracticaTest extends TestCase
         $client = new Client();
         $response = $client->post('http://localhost/practica-php/store.php', [
                 'form_params' => [
-                    'nombreIng' => 'sebastian',
+                    'nombreIng' => 'Prueba Nombre',
                     'correoIng' => 'prueba@test.com',
                     'generoIng' => 'hombre',
                     'passwordIng' => '123456789',
